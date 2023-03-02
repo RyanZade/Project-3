@@ -13,7 +13,7 @@ const postsSchema = new Schema({
   ],
   user: {
     type: String,
-    ref: 'Profile'
+    ref: 'User'
   }
 });
 
