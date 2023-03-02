@@ -6,12 +6,12 @@ const postsSchema = new Schema({
     required: true,
     unique: true,
   },
-  comment: [
+  content: [
     {
       type: String,
     },
   ],
-  user: {
+  author: {
     type: String,
     ref: 'User'
   }
