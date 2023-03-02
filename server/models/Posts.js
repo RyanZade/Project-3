@@ -11,6 +11,10 @@ const postsSchema = new Schema({
       type: String,
     },
   ],
+  user: {
+    type: String,
+    ref: 'Profile'
+  }
 });
 
 const Posts = model('Posts', postsSchema);
