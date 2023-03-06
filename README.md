@@ -3,9 +3,9 @@
 NoMoreSeek is a cross between a social media site and a job seeking site. It helps users link with employers and employees
 to find employment.
 
-Deployed URL of the application: https://git.heroku.com/no-more-seek.git
+Deployed URL of the application: https://no-more-seek.herokuapp.com/
 
-![Screenshot](./public/assets/BookClubSignUp.png)
+![Screenshot](./screenshot.PNG)
 
 ## Table of Contents
 
@@ -15,12 +15,13 @@ Deployed URL of the application: https://git.heroku.com/no-more-seek.git
 - [License](#license)
 
 ## Installation
+
 - Navigate to the main folder's package.json file
 - There you will see all the dependencies
 - To install them make sure you are navigated to the main folder and run "npm i"
 
-
 ## Usage
+
 - Run npm run seed to seed the application
 - Run npm run develop to start the applicaiton
 - Browse through all the already existing posts
@@ -31,4 +32,5 @@ Deployed URL of the application: https://git.heroku.com/no-more-seek.git
 N/A
 
 ## Licence
+
 Please refer to the repo
