@@ -9,7 +9,7 @@ import Auth from '../../utils/auth';
 
 const PostForm = () => {
   const [postText, setPostText] = useState('');
-
+ 
   const [characterCount, setCharacterCount] = useState(0);
 
   const [addPost, { error }] = useMutation(ADD_POST, {
@@ -44,6 +44,7 @@ const PostForm = () => {
           postAuthor: Auth.getProfile().data.username,
         },
       });
+      console.log(postText);
 
       setPostText('');
     } catch (err) {
