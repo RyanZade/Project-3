@@ -13,7 +13,9 @@ const Footer = () => {
     padding: 20px;
     background-color: ${colour};
     font-size: 20px;
-    text-align: center;`}>
+    text-align: center;
+    min-width:1100px;
+    `}>
       <div className="container text-center mb-5">
         {location.pathname !== '/' && (
           <button
