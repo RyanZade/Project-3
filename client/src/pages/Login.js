@@ -1,9 +1,14 @@
+/** @jsxImportSource @emotion/react */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
+import { css } from '@emotion/react';
+// import { Box, Center, Image, Flex, Badge, Text } from "@chakra-ui/react";
 
 import Auth from '../utils/auth';
+
+const colour = '#33FFFF';
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -41,7 +46,14 @@ const Login = (props) => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
+    <main css={css`
+    padding: 50px;
+    background-color: ${colour};
+    font-size: 24px;
+    border-radius: 4px;
+    text-align: center;
+    flex-row: justify-center;
+  `}>
       <div className="col-12 col-lg-10">
         <div className="card">
           <h4 className="card-header bg-dark text-light p-2">Login</h4>

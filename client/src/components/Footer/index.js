@@ -1,11 +1,19 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { css } from '@emotion/react';
+
+const colour = `#33FFFF`
 
 const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   return (
-    <footer className="w-100 mt-auto bg-secondary p-4">
+    <footer css={css`
+    padding: 20px;
+    background-color: ${colour};
+    font-size: 20px;
+    text-align: center;`}>
       <div className="container text-center mb-5">
         {location.pathname !== '/' && (
           <button
@@ -25,7 +33,7 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          by the Tech Thoughts team.
+          by Ryan Zadeh.
         </h4>
       </div>
     </footer>
