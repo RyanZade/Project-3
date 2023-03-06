@@ -3,7 +3,7 @@
 NoMoreSeek is a cross between a social media site and a job seeking site. It helps users link with employers and employees
 to find employment.
 
-Deployed URL of the application: 
+Deployed URL of the application: https://git.heroku.com/no-more-seek.git
 
 ![Screenshot](./public/assets/BookClubSignUp.png)
 
